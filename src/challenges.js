@@ -21,7 +21,7 @@ else {
 
 // Desafio 2
 function calcArea(base , altura) {
-  let area = (base * altura) /2;
+  let area = (base * altura) /2 ;
   
   
   return area 
@@ -118,13 +118,36 @@ else if ( posicaocat2positivo == posicaocat1posito) {
 
 }
 
-console.log(catAndMouse(1,0,2));
-
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+var novovetor = 0; 
+
+for (let i = 0; i < array.length ; i ++) {
+
+                 if( array[i] % 3 == 0 && array[i]% 5 != 0) {
+                 array[i] = 'fizz'}
+                 
+                 else if( array[i] % 5 == 0 && array[i]% 3 != 0) {
+                  array[i] = 'buzz'}
+                  
+                 else if( array[i] % 3 == 0 && array[i] % 5 == 0) {
+                    array[i] = 'fizzBuzz'}
+                    
+                 else  {
+                      array[i] = 'bug!'
+                 }
+                 
+                        
+                
+                  
+                
+
+}
+return array
 }
 
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9
 function encode() {
   // seu código aqui
@@ -144,4 +167,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-};
+}
