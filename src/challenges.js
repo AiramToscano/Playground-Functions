@@ -1,6 +1,21 @@
 // Desafio 1
-function compareTrue() {
-  teste
+function compareTrue(n1 , n2) {
+  
+  var a= true;
+  var b= false;
+
+if ( n1 == a && n2 == a) {
+
+  return a;
+}
+
+else if ( n1 == b || n2 == a) {
+
+  return b;
+}
+else {
+  return b;
+}
 
 }
 
