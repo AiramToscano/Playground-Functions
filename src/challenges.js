@@ -90,9 +90,35 @@ for( var i =0 ; i < array.length ; i++) {
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+
+let posicaocat1 = cat1 - mouse;
+var posicaocat1posito = Math.abs(posicaocat1);
+let posicaocat2 = cat2 - mouse;
+var posicaocat2positivo = Math.abs(posicaocat2);
+let stringcat1 = 'cat1';
+let stringcat2 = 'cat2';
+let stringmouse = 'os gatos trombam e o rato foge';
+
+if( posicaocat1posito > posicaocat2positivo  ) {
+
+    return stringcat2
 }
+
+else if ( posicaocat2positivo > posicaocat1posito ) {
+
+  return stringcat1
+}
+
+else if ( posicaocat2positivo == posicaocat1posito) {
+
+   return stringmouse
+   
+}
+
+}
+
+console.log(catAndMouse(1,0,2));
 
 // Desafio 8
 function fizzBuzz() {
