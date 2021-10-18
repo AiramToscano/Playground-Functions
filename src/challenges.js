@@ -59,9 +59,35 @@ return pontos
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(array) {
+
+var maior =array[0];
+var soma=0;
+
+for( var i =0 ; i < array.length ; i++) {
+
+            if( array[i] > maior){
+
+              maior = array[i];
+               
+        
+        } }
+
+       for ( var j = 0 ; j < array.length ; j ++){
+
+           if( array[j] == maior){
+
+              soma += 1;
+           }
+
+
+       }
+       return soma;
+      
+  }
+ 
+console.log(highestCount([-1,-2,-2]))
+
 
 // Desafio 7
 function catAndMouse() {
