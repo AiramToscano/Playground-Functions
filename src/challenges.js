@@ -34,12 +34,22 @@ let stringseparada = string.split(" ")
 return stringseparada
 }
 
-console.log(splitSentence('trybe'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName( array) {
+  let vetor =[];
+for( let i = 0 ; i < array.length; i++){
+
+    vetor = array[(array.length - 1) - i] + ', '+array[0];
+
+ return  vetor;
+
+
 }
+
+}
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints() {
