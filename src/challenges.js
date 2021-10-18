@@ -86,7 +86,7 @@ for( var i =0 ; i < array.length ; i++) {
       
   }
  
-console.log(highestCount([-1,-2,-2]))
+
 
 
 // Desafio 7
